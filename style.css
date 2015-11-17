@@ -1,0 +1,17 @@
+body{
+  padding: 2em;
+  background-image: url("http://33.media.tumblr.com/3883558c9223900a9a36af4a8ced336d/tumblr_inline_mr6k4aJ79A1qz4rgp.jpg");
+  background-repeat: repeat;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 2em;
+}
+h2{
+  padding-bottom: 1em;
+}
+
+ul li {
+  list-style-type: none;
+}
