@@ -43,7 +43,7 @@
         <input type="checkbox" ng-model="foo" id="czeched"/>
         <input type="checkbox" ng-model="bar"/>
         <p>
-          Are atleast of the boxes checked? {{ foo1 || bar1 }}
+          Are atleast one of these boxes checked? {{ foo1 || bar1 }}
         </p>
         <input type="checkbox" ng-model="foo1" id="czeched"/>
         <input type="checkbox" ng-model="bar1"/>
@@ -53,21 +53,21 @@
     <div ng-app="ngAnimate">
       <h2> My Band Search:</h2>
       <div ng-init="band = [
-      {band:'Foster the People', genre:'Indie pop band', },
+      {band:'Foster the People', genre:'Indie Pop' },
       {band:'Tribe Called Quest', genre:'Hip-hop'},
       {band:'Digable Planets', genre:'Hip-hop'},
       {band:'Flight Facilities', genre:'Electronic'},
       {band:'Guns N Roses ', genre:'Rock'},
 
     ]">
-      I have {{band.length}} bands listed. Filter by name or by genre.
-      <input type="search" ng-model="q" placeholder="filter band..." aria-label="filter band" />
+      I have {{band.length}} bands listed. Filter by name or by genre:
+      <input type="search" ng-model="q" placeholder="Filter here..." aria-label="Filter band" />
       <ul class="example-animate-container">
         <li class="animate-repeat" ng-repeat="band in band | filter:q as results">
-          {{band.band}} who is {{band.genre}}.
+          {{band.band}} is a {{band.genre}} band.
         </li>
         <li class="animate-repeat" ng-if="results.length == 0">
-          <strong>No results found...</strong>
+          <strong>Rawr, no results found...try again</strong>
         </li>
       </ul>
     </div>
